@@ -1,0 +1,32 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.eventsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.eventItem {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.eventItem h3 {
+    margin: 0 0 10px 0;
+}
+
+.eventItem p {
+    margin: 5px 0;
+}
