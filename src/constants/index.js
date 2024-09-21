@@ -1,1 +1,1 @@
-export const BASE_URL = "https://events-registration-app-2.onrender.com";
+export const BASE_URL = "https://events-registration-app-3.onrender.com";
