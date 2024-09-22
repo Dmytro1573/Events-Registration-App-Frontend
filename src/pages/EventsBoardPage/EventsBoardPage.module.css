@@ -1,32 +1,80 @@
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.eventsList {
-    list-style-type: none;
-    padding: 0;
+.eventsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.eventItem {
-    padding: 10px;
+.eventCard {
     border: 1px solid #ddd;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eventFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.registerButton,
+.viewButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    cursor: pointer;
 }
 
-.eventItem h3 {
-    margin: 0 0 10px 0;
+.registerButton {
+    background-color: #28a745;
 }
 
-.eventItem p {
-    margin: 5px 0;
+.viewButton {
+    background-color: #17a2b8;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.pagination span {
+    display: flex;
+    gap: 5px;
+}
+
+.pagination button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    color: #ccc;
+}
+
+.activePage {
+    font-weight: bold;
+    text-decoration: underline;
 }
